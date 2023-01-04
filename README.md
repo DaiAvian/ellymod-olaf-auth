@@ -17,5 +17,5 @@ import {AuthService} from "@ellymod/olaf-auth/lib"
 
 ```js
 const olafService = new AuthService()
-olafService.testOutput()
+olafService.loginWithRedirect()
 ```

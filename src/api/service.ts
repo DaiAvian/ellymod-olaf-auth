@@ -161,9 +161,6 @@ export default class AuthService {
         return fetchObservable("POST", `${this.config?.api_endpoint}/o/token/`, JSON.stringify(body));
     }
 
-    testOutput() {
-        console.log('Testing the output')
-    }
 
     private static setAuthToLocalStorage(auth: FetchInterface): boolean {
         // store auth authToken/refreshToken/expiresIn in local storage to keep user logged in between page refreshes
