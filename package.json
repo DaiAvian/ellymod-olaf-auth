@@ -9,11 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/DaiAvian/ellymod-olaf-auth.git"
   },
   "author": "Marko Fink",
   "license": "ISC",
   "dependencies": {
     "typescript": "^4.9.4"
-  }
+  },
+  "homepage": "https://github.com/DaiAvian/ellymod-olaf-auth#readme"
 }
