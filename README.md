@@ -16,6 +16,6 @@ import {AuthService} from "@ellymod/olaf-auth/lib"
 ### Initialize an instance and reference a method
 
 ```js
-const olafService = new AuthService()
+const olafService = new AuthService(config)
 olafService.loginWithRedirect()
 ```
