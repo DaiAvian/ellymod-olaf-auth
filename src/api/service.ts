@@ -12,8 +12,8 @@ export default class AuthService {
     config: ConfigInterface | null;
     isAuthenticated: boolean;
 
-    constructor() {
-        this.config = null
+    constructor(config: ConfigInterface) {
+        this.config = config || null
         this.isAuthenticated = false
     }
 
@@ -143,7 +143,7 @@ export default class AuthService {
                             localStorage.setItem(ACCESS_TOKEN_STORAGE_KEY, JSON.stringify(response));
                         }
 
-                        this.verifyToken()
+                        this.verifyToken().catch((error) => {console.error('Token verification failed: ', error.message)})
                         isRefreshingToken = false;
                     })
                 }
